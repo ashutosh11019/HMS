@@ -1,0 +1,111 @@
+{% extends 'default/base.html' %}
+{% load static %}
+{% block main-content %} 
+<section class="clean-block clean-hero" style="color: rgba(9, 162, 255, 0.85);background: url(&quot;{% static 'img/tech/fjGlXJ.jpg' %}&quot;);">
+    <div class="text">
+        <h2>HOSPITAL MANAGEMENT SYSTEM</h2>
+        <p>Your health, our mission</p><button class="btn btn-outline-light btn-lg" type="button">Learn More</button>
+    </div>
+</section>
+<section class="clean-block clean-info dark">
+    <div class="container" style="font-size: 22px;">
+        <div class="block-heading">
+            <h2 class="text-info">HMS</h2>
+            <p style="text-align: center;font-size: 14px;">The HMS system&nbsp;targets&nbsp; to&nbsp; provide&nbsp;complete&nbsp; solution&nbsp; for all needed Hospital related services. The intended audience<br>includes all stakeholders in the potential system which include the Administrative Staff, patients and doctors.&nbsp;<br><br><br></p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6"><img class="img-thumbnail" src="{% static 'img/scenery/hospital.png' %}"></div>
+            <div class="col-md-6">
+                <h3 style="text-align: center;">The fastest medical care now at your doorstep</h3>
+                <div class="getting-started-info">
+                    <p style="font-size: 13px;">Hospital Management System which provides online real time information<br>about the doctors available, number of beds available, suggestion of doctors,<br>etc. This is a software from where a patient can get the entire details of the<br>hospital as well as all the infrastructure those are available in the hospital.<br><br><br></p>
+                </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clean-block features">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Features</h2>
+            <p style="text-align: center;font-size: 14px;">The HMS system will provide different types of services<br>based on the user. The admin of the hospital will be working like the controller and can administer the database of various users. While the patients and the doctors&nbsp; have got other functionalities.<br><br><br></p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 feature-box"><i class="icon-star icon"></i>
+                <h4>Patient's profile</h4>
+                <p>A one stop destination made exclusively for our patients to access all medical facilities starting from booking doctor's appointments to payment of bills all from the comfort of their homes.</p>
+            </div>
+            <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
+                <h4>Doctor's profile</h4>
+                <p>An easy access to a well managed repository that comprises of all the patient details, diagnosis information, current status etc.</p>
+            </div>
+            <div class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
+                <h4>Admin portal</h4>
+                <p>A well developed network to regulate all our administrative work.</p>
+            </div>
+            <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
+                <h4>Easy to use Interface</h4>
+                <p>A simplified interface supported with a well developed database to store information.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clean-block slider dark">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Book your appointment today</h2>
+            <p></p>
+        </div>
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img class="w-100 d-block" src="{% static 'img/scenery/6jVwBz.jpg' %}" alt="Slide Image" style="background: url(&quot;{% static 'img/hospital.png' %}&quot;);"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="{% static 'img/scenery/238-2384254_hospital-wallpaper-hd.jpg' %}" alt="Slide Image" style="background: url(&quot;{% static 'img/healthcare-technology-doctor-using-digital-tablet-icon-medical-network-hospital-background-162019727.jpg' %}&quot;);"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="{% static 'img/scenery/HD-wallpaper-health-doctor-hospital-healthtips-doctor-health.jpg' %}" alt="Slide Image"></div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+</section>
+<section class="clean-block about-us">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Our Team</h2>
+            <p>Meet the developers of HMS project</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/avatars/ashutosh%20pic.jpeg' %}">
+                    <div class="card-body info">
+                        <h4 class="card-title">Ashutosh</h4>
+                        <p class="card-text">Developer&nbsp;</p>
+                        <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/avatars/suraj%20pic.jpeg' %}">
+                    <div class="card-body info">
+                        <h4 class="card-title">Suraj Kumar</h4>
+                        <p class="card-text">Developer</p>
+                        <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/avatars/dipannita%20pic.jpg' %}" style="height: 309.5px;margin: 0px;width: 301px;">
+                    <div class="card-body info" style="height: 149.844px;margin: 23px;">
+                        <h4 class="card-title">Dipannita Kundu</h4>
+                        <p class="card-text">Developer</p>
+                        <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock main-content %}

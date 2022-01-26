@@ -1,0 +1,19 @@
+{% extends 'default/base.html' %}
+{% load static %}
+{% block main-content %} 
+<section class="clean-block clean-form dark">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">WELCOME BACK!</h2>
+            <p>Login to your account...</p>
+        </div>
+        <form>
+            <div class="mb-3"><label class="form-label" for="name">Username</label><input class="form-control" type="text" id="name" name="name"></div>
+            <div class="mb-3"><label class="form-label" for="subject">Password</label><input class="form-control" type="text" id="subject" name="subject"></div><button class="btn btn-primary btn-lg text-start" type="submit" style="padding: 8px 16px;">LOGIN</button>
+            <div></div>
+            <div class="mb-3"></div>
+            <div class="mb-3"></div>
+        </form>
+    </div>
+</section>
+{% endblock main-content %}

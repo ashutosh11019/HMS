@@ -1,0 +1,26 @@
+{% extends 'default/base.html' %}
+{% load static %}
+{% block main-content %} 
+<section class="clean-block clean-form dark">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Register</h2>
+            <p>Set your account to start your health journey with us!</p>
+        </div>
+        <form>
+            <div class="mb-3"><label class="form-label" for="name">Username</label><input class="form-control" type="text" id="name" name="name"></div>
+            <div class="mb-3"><label class="form-label" for="subject">Email</label><input class="form-control" type="text" id="subject" name="subject"></div><label class="form-label" for="email">First Name</label>
+            <div class="mb-3"><input class="form-control" type="email" id="email" name="email" style="margin: 1px;"><label class="form-label" for="email">Last Name</label><label class="form-label" for="email"></label>
+                <div></div>
+                <div></div><input class="form-control" type="email" id="email-1" name="email" style="margin: 1px;">
+                <div></div>
+            </div><label class="form-label">Date of Birth<input class="form-control" type="date"></label>
+            <div><label class="form-label">Contact no</label><input class="form-control" type="text"></div>
+            <div><label class="form-label">Set Password</label><input class="form-control" type="text"></div>
+            <div><label class="form-label">Confirm Password</label><input class="form-control" type="text"></div>
+            <div class="mb-3"><label class="form-label" for="message">Designation(Patient/Doctor/Admin-Staff)</label><textarea class="form-control" id="message" name="message"></textarea></div>
+            <div class="mb-3"><button class="btn btn-primary" type="submit">Register</button></div>
+        </form>
+    </div>
+</section>
+{% endblock main-content %}

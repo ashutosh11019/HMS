@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer-with-social-media-icons.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'css/vanilla-zoom.min.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">HMS</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">CONTACT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">REGISTER</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        
+        {% block main-content %} {% endblock main-content %}
+
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <footer id="footerpad">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-8 mx-auto">
+                                    <ul class="list-inline text-center">
+                                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+                                    </ul>
+                                    <p class="copyright text-muted text-center">Copyright © HMS 2022 | Web Design by Team</p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2022 Hospital Management System</p>
+        </div>
+    </footer>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="{% static 'js/vanilla-zoom.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>
