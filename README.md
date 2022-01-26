@@ -6,7 +6,7 @@ Our Project
 
 1. Signup
 2. Signin
-3. About Us
+3. Contact Us
 4. Logout
 
 5. Patient dashboard
